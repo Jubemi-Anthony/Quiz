@@ -94,7 +94,7 @@ const Questions = ({isOn, setIsOn, chosen, setChosen}) => {
         }else{
             setIsOn('done');
         }
-        }, 100);
+        }, 1000);
         setFinalExport({
             user: 'Jubemi Pajiah',
             score: score,

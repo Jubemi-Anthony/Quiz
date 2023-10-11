@@ -79,7 +79,7 @@ export const htmlcss = [
     [["What does CSS stand for?"], ["Cascading Style Sheets", "Computer Style Sheets", "Creative Style Sheets"]],
     [["Which CSS property is used to change the background color of an element?"], ["background-color", "color", "text-color"]],
     [["What is the purpose of the HTML <meta> element?"], ["To provide metadata about the document", "To define a new HTML element", "To create hyperlinks"]],
-    [["In CSS, which unit is used to specify font size as a percentage relative to the parent element's font size?"], ["%", "em", "px"]],
+    [["In CSS, which unit is used to specify font size as a percentage relative to the parent element's font size?"], ["em", "fr", "px"]],
     [["Which HTML tag is used to create a line break without any extra spacing or elements?"], ["<br>", "<p>", "<hr>"]],
     [["What does the CSS property 'margin' control?"], ["The spacing around an element", "The size of text", "The font style"]],
     [["Which CSS property is used to make text italic?"], ["font-style", "text-style", "italic"]],
