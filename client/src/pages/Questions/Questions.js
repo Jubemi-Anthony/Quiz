@@ -94,7 +94,7 @@ const Questions = ({isOn, setIsOn, chosen, setChosen}) => {
         }else{
             setIsOn('done');
         }
-        }, 1000);
+        }, 100);
         setFinalExport({
             user: 'Jubemi Pajiah',
             score: score,
@@ -204,7 +204,7 @@ const Questions = ({isOn, setIsOn, chosen, setChosen}) => {
             timed={timed}
             setTimed={setTimed}
             startGame={startGame}
-        /> : <Done score={score} startGame={startGame}/>
+        /> : <Done score={score} startGame={startGame} topic={topic}/>
         }
     </main>
   )

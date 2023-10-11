@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-const Done = ({score, startGame,}) => {
+const Done = ({score, startGame, topic}) => {
     const navigate = useNavigate();
     const percent = (score/20) * 100;
     function goHome(){
@@ -12,6 +12,10 @@ const Done = ({score, startGame,}) => {
             <div className="scoreInfo">
                 <p>Your Score:</p>
                 <p className="big">{score}</p>
+            </div>
+            <div className="scoreInfo">
+                <p>Category:</p>
+                <p className="big">{topic}</p>
             </div>
             <div className="percent">
                 <p>{percent}%</p>
