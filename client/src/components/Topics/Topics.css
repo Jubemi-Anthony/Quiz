@@ -1,0 +1,26 @@
+.Topics{
+    background-color: var(--white);
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+.Topics p:first-child{
+    font-size: 0.9rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+.Topics p:last-child{
+    font-size: 0.6rem;
+    color: #d2d2d2;
+    font-weight: 500;
+}
+.Topics img{
+    width: var(--icon-sm);
+    height: var(--icon-sm);
+}

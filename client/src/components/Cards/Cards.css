@@ -1,0 +1,16 @@
+.Cards{
+    text-transform: uppercase;
+    width: 35vw;
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    border-radius: 15px;
+    padding-top: 10%;
+}
+.Cards p{
+    width: 85%;
+    margin: auto;
+    font-weight: 600;
+}

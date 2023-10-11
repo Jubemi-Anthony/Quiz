@@ -1,0 +1,290 @@
+.Questions{
+    padding-bottom: 15vh;
+}
+.Questions .top{
+    background-color: var(--sky);
+    padding-bottom: 30px;
+}
+.Questions .top .container{
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+}
+.Questions .back{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255);
+}
+.Questions .back img{
+    width: var(--icon-md);
+}
+.Questions .range{
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-top: 30px;
+}
+.Questions .range span{
+    font-weight: 400;
+    font-size: 0.95rem;
+    margin-left: 5px;
+}
+#input-range{
+    width: 100%;
+    background-color: var(--white);
+    height: 10px;
+    border-radius: 50px;
+    margin-top: 5px;
+}
+#input-range div{
+    background-color: rgb(5, 218, 5);
+    height: 100%;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.Questions .question-container{
+    width: 90%;
+    margin: auto;
+    padding-top: 4vh;
+}
+.Questions .ask{
+    min-height: 20vh;
+    max-height: fit-content;
+    padding: 1vh;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: rgb(52, 52, 52);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Questions .answer .option input{
+    border: none;
+    width: 100%;
+    color: rgb(52, 52, 52);
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: 1px solid rgb(160, 160, 160);
+    border-radius: 5px;
+    padding: 7px;
+    min-height: 10vh;
+    background-color: var(--light-grey);
+}
+.Questions .answer img{
+    width: var(--icon-sm);
+    height: var(--icon-sm);
+}
+.Questions .answer .option div{
+    background-color: var(--white);
+    border: 1px solid rgb(221, 221, 221);
+    width: 25px;
+    height: 25px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Questions .answer .option .correct{
+    background-color: #00bf91;
+    border-color: #00bf91;
+    color: var(--white);
+}
+.Questions .answer .option .wrong{
+    background-color: rgb(250, 38, 38);
+    border-color: rgb(250, 38, 38);
+    color: var(--white);
+}
+.Questions .submit{
+    margin-top: 45px;
+    width: 90%;
+    margin: auto;
+}
+.Questions .submit button{
+    width: 100%;
+    background-color: var(--sky);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.Questions .isOn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    background-color: var(--light-grey);
+}
+.Questions .isOn button{
+    background-color: var(--sky);
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 80%;
+    color: var(--white);
+}
+.Questions .highest{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.score img{
+    width: var(--icon-sm);
+    height: var(--icon-sm);
+}
+.score{
+    display: flex;
+    align-items: center;
+}
+.score span{
+    color: var(--white);
+    font-weight: 600;
+}
+.high-right{
+    display: flex;
+    gap: 10px;
+}
+.time{
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+}
+.time-span{
+    font-size: 1.2rem;
+}
+.time img{
+    width: 25px;
+    height: 25px;
+}
+.info{
+    background-color: var(--white);
+    padding: 20px 10px;
+    border-radius: 10px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0px 0px 5px black;
+}
+.scoreInfo{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+.big{
+    color: var(--sky);
+    font-weight: bold;
+    font-size: 2rem;
+
+}
+.percent{
+    margin: 30px auto;
+    background-color: var(--sky);
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 2rem;
+    border-radius: 50px;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.timerQuestion{
+    text-align: center;
+}
+.check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+.checks{
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    color: var(--medium-grey);
+    border-radius: 10px;
+}
+.timerQuestion h1{
+    color: var(--dark-grey);
+}
+.checks img{
+    filter: invert(1);
+}
+.holdMe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    background-color: var(--sky);
+}
+@media(max-width: 700px){
+    .Questions{
+        padding-bottom: 10vh;
+    }
+    .Questions .top{
+        background-color: var(--sky);
+        padding-bottom: 30px;
+    }
+    .Questions .top .container{
+        width: 95%;
+        padding-top: 10px;
+    }
+    .Questions .back{
+        width: 30px;
+        height: 30px;
+    }
+    .Questions .range{
+        color: var(--white);
+        font-weight: 700;
+        font-size: 1.2rem;
+        margin-top: 20px;
+    }
+    .Questions .question-container{
+        width: 90%;
+        margin: auto;
+        padding-top: 1vh;
+    }
+    .Questions .ask{
+        min-height: 15vh;
+        padding: 2vh;
+        font-size: 1.2rem;
+    }
+  
+    .Questions .answer .option input{
+        margin-bottom: 15px;
+        padding: 5px;
+        min-height: 9vh;
+    }
+    .Questions .submit button{
+        padding: 13px;
+    }
+}

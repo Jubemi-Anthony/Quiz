@@ -1,0 +1,87 @@
+.Home{
+    color: var(--white);
+}
+
+.Home .top{
+    background-color: var(--sky);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 40vh;
+    position: relative;
+}
+.Home .top .container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    align-items: center;
+}
+.Home .profile{
+    width: var(--icon);
+    height: var(--icon);
+}
+.Home .view-left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.Home .notification img{
+    width: var(--icon-sm);
+    height: var(--icon-sm);
+    filter: invert(1);
+}
+.Home .hello p:first-child{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.Home .hello p:last-child{
+    font-size: 0.8rem;
+}
+.Home .notification{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+}
+.Home .notification span{
+    background-color: #febd71;
+    padding: 2px 4px;
+    font-size: 0.7rem;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 75%;
+    left: 75%;
+}
+.Home .top .card-1, .Home .top .card-2{
+    position: absolute;
+    bottom: -20%;
+}
+.Home .top .card-1{
+    left: 10%;
+}
+.Home .top .card-1 .Cards{
+    width: 40vw;
+}
+.Home .top .card-2 .Cards{
+    height: 25vh;
+}
+.Home .top .card-2{
+    right: 0px;
+}
+.Home .bottom{
+    color: var(--black);
+    background-color: var(--light-grey);
+    padding-top: 15.5vh;
+    margin-top: -4vh;
+    padding-bottom: 10vh;
+}
+.Home .bottom .container{
+    width: 90%;
+    margin: auto;
+}

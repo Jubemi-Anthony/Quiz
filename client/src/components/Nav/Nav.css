@@ -1,0 +1,13 @@
+nav{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    background-color: var(--white);
+    padding: 1vh 10%;
+}
+nav img{
+    width: var(--icon-sm);
+    height: var(--icon-sm);
+}
