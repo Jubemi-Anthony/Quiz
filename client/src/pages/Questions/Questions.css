@@ -62,7 +62,7 @@
     justify-content: center;
     align-items: center;
 }
-.Questions .answer .option input{
+.Questions .answer .option textarea{
     border: none;
     width: 100%;
     color: rgb(52, 52, 52);
@@ -279,7 +279,7 @@
         font-size: 1.2rem;
     }
   
-    .Questions .answer .option input{
+    .Questions .answer .option textarea{
         margin-bottom: 15px;
         padding: 5px;
         min-height: 9vh;

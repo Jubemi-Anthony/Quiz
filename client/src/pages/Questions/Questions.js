@@ -11,6 +11,11 @@ import {generalB} from "../../data/generalB";
 import {htmlcss} from "../../data/htmlcss";
 import {football} from "../../data/football";
 import {javascript} from "../../data/javascript";
+import {movies} from "../../data/movies";
+import {sports} from "../../data/sports";
+import {literature} from "../../data/literature";
+import {travel} from "../../data/travel";
+import {invention} from "../../data/invention";
 import Done from "../../components/Done";
 import Start from "../../components/Start";
 
@@ -46,6 +51,21 @@ const Questions = ({isOn, setIsOn, chosen, setChosen}) => {
         case 'javascript':
             setChosen(javascript)
         break;
+        case 'movies':
+            setChosen(movies)
+        break;
+        case 'literature':
+            setChosen(literature)
+        break;
+        case 'sports':
+            setChosen(sports)
+        break;
+        case 'travel':
+            setChosen(travel)
+        break;
+        case 'invention':
+            setChosen(invention)
+        break;
         default:
         break;
     }
@@ -75,7 +95,11 @@ const Questions = ({isOn, setIsOn, chosen, setChosen}) => {
             setIsOn('done');
         }
         }, 1000);
-    
+        setFinalExport({
+            user: 'Jubemi Pajiah',
+            score: score,
+            category: topic,
+        })
         return () => clearInterval(countdown);
     }, [time]);
     

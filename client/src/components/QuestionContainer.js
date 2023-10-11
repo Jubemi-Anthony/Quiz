@@ -80,13 +80,13 @@ const QuestionContainer = ({
         </div>
         <div className="answer">
             <div className="option" >
-                <input id='A' className={optA === 'y' ? 'correct' : optA === 'n' ? 'wrong' : ''} onClick={(e)=> getA(e)} readOnly value={gameQuestions[Q-1][1][gameOptions[0]]}/>
+                <textarea id='A' className={optA === 'y' ? 'correct' : optA === 'n' ? 'wrong' : ''} onClick={(e)=> getA(e)} readOnly value={gameQuestions[Q-1][1][gameOptions[0]]}/>
             </div>
             <div className="option" >
-                <input id='B' className={optB === 'y' ? 'correct' : optB === 'n' ? 'wrong' : ''} onClick={(e)=> getB(e)} readOnly value={gameQuestions[Q-1][1][gameOptions[1]]}/>
+                <textarea id='B' className={optB === 'y' ? 'correct' : optB === 'n' ? 'wrong' : ''} onClick={(e)=> getB(e)} readOnly value={gameQuestions[Q-1][1][gameOptions[1]]}/>
             </div>
             <div className="option">
-                <input id='C' className={optC === 'y' ? 'correct' : optC === 'n' ? 'wrong' : ''} onClick={(e)=> getC(e)} readOnly value={gameQuestions[Q-1][1][gameOptions[2]]}/>
+                <textarea id='C' className={optC === 'y' ? 'correct' : optC === 'n' ? 'wrong' : ''} onClick={(e)=> getC(e)} readOnly value={gameQuestions[Q-1][1][gameOptions[2]]}/>
             </div>
         </div>
     </section>
