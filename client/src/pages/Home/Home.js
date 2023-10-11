@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom';
 
 const Home = ({setIsOn}) => {
   const {one, two} = shuffleCategories(categories);
-  setIsOn(false);
+  setIsOn('no');
   return (
     <main className="Home">
       <section className="top">

@@ -61,7 +61,11 @@ const Questions = ({isOn, setIsOn, chosen, setChosen}) => {
     const [score, setScore] = useState(0);
     const [time, setTime] = useState(70);
     const [timed, setTimed] = useState(null);
-      
+    const [finalExport, setFinalExport] = useState({
+        user: 'Jubemi Pajiah',
+        score: 0,
+        category: topic,
+    })
     useEffect(() => {
         if(timed === false) return;
         const countdown = setInterval(() => {
@@ -70,6 +74,7 @@ const Questions = ({isOn, setIsOn, chosen, setChosen}) => {
         }
         }, 1000);
     
+        setIsOn('done');
         return () => clearInterval(countdown);
     }, [time]);
     
@@ -89,7 +94,18 @@ const Questions = ({isOn, setIsOn, chosen, setChosen}) => {
         setOptC('');
         if(Q <= 19){
             setQ(Q+1);
-            if(Q===19) setButtonText('finish');
+            if(Q===19){
+                setButtonText('finish');
+            };
+        }
+        if(buttonText === 'finish'){
+            setIsOn('done')
+            setFinalExport({
+                user: 'Jubemi Pajiah',
+                score: score,
+                category: topic,
+            })
+            console.log(finalExport);
         }
         setAnswered(false);
     }
@@ -98,12 +114,14 @@ const Questions = ({isOn, setIsOn, chosen, setChosen}) => {
         if(timed === null) return;
         shuffleGameQuestions(chosen);
         setQ(1);
-        setIsOn(true);
+        setIsOn('yes');
         setTime(70);
+        setScore(0);
+        setButtonText('next question')
     }
   return (
     <main className="Questions">
-        {isOn === true ? 
+        {isOn === 'yes' ? 
         <div>
             <section className="top">
             <div className="container">
@@ -151,12 +169,12 @@ const Questions = ({isOn, setIsOn, chosen, setChosen}) => {
         <div className="submit">
             <button onClick={nextQuestion}>{buttonText}</button>
         </div>
-        </div> :
+        </div> : isOn === 'no' ?
         <Start
             timed={timed}
             setTimed={setTimed}
             startGame={startGame}
-        />
+        /> : <Done score={score} startGame={startGame}/>
         }
     </main>
   )

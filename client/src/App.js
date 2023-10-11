@@ -6,7 +6,7 @@ import Questions from "./pages/Questions/Questions";
 import { useState } from "react";
 
 function App() {
-  const [isOn,setIsOn] = useState(false);
+  const [isOn,setIsOn] = useState('no');
   const [chosen, setChosen] = useState([]);
   return (
     <div>
