@@ -204,8 +204,12 @@ const Questions = ({isOn, setIsOn, chosen, setChosen}) => {
             timed={timed}
             setTimed={setTimed}
             startGame={startGame}
-        /> : <Done score={score} startGame={startGame} topic={topic}/>
-        }
+        /> : <Done 
+                score={score} 
+                startGame={startGame} 
+                topic={topic}
+                timed={timed}
+                />}
     </main>
   )
 }
