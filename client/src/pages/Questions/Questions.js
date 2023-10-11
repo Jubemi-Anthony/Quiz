@@ -71,10 +71,11 @@ const Questions = ({isOn, setIsOn, chosen, setChosen}) => {
         const countdown = setInterval(() => {
         if (time > 0) {
             setTime((prevTimes) => prevTimes - 1);
+        }else{
+            setIsOn('done');
         }
         }, 1000);
     
-        setIsOn('done');
         return () => clearInterval(countdown);
     }, [time]);
     
@@ -112,12 +113,17 @@ const Questions = ({isOn, setIsOn, chosen, setChosen}) => {
 
     const startGame = ()=>{
         if(timed === null) return;
+        setOptA('');
+        setOptB('');
+        setOptC('');
+        setAnswered(false);
         shuffleGameQuestions(chosen);
         setQ(1);
         setIsOn('yes');
         setTime(70);
         setScore(0);
         setButtonText('next question')
+        
     }
   return (
     <main className="Questions">
