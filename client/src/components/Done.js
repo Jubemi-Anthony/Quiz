@@ -1,6 +1,11 @@
+import { useNavigate } from "react-router-dom";
 
-const Done = ({score, startGame}) => {
+const Done = ({score, startGame,}) => {
+    const navigate = useNavigate();
     const percent = (score/20) * 100;
+    function goHome(){
+        navigate('/');
+    }
   return (
     <section className="isOn">
         <div className="info">
@@ -13,7 +18,7 @@ const Done = ({score, startGame}) => {
             </div>
             <div className="buttons">
                 <button onClick={startGame}>Play Again</button>
-                <button>Another Topic</button>
+                <button onClick={goHome}>Another Topic</button>
             </div>
         </div>
     </section>
